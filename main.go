@@ -1,28 +1,110 @@
 package main
 
 import (
+	"encoding/csv"
 	"fmt"
 	"math"
+	"os"
 	"sort"
+	"strconv"
+	"strings"
 )
 
-func main() {
-	f := FuzzyAssetAllocator{}
-	f.Initialize()
-	f.InitializeFuzzyInputs()
-	f.ProcessRules()
-	f.CalculateResultantAssetAllocation()
-	f.FactorizeReasons()
-}
-
-
-
-
 const(
-	MeanCAPERatio = 16.85
+	MeanCAPERatio = 20.0
 	stocks = "stocks"
 	bonds = "bonds"
 )
+
+func main() {
+	runSimulation()
+}
+
+type AssetValue struct {
+	Value    float64
+	Drawdown float64
+	Max      float64
+}
+
+func runSimulation() error {
+	file, err := os.Open("data.csv")
+	if err != nil {
+		return err
+	}
+	stringData, err :=  csv.NewReader(file).ReadAll()
+	if err != nil {
+		return err
+	}
+
+	f := FuzzyAssetAllocator{}
+
+	inflation := AssetValue{1000.0, 1.0, 1000.0}
+	allBonds := AssetValue{1000.0, 1.0, 1000.0}
+	allStocks := AssetValue{1000.0, 1.0, 1000.0}
+	allocator := AssetValue{1000.0, 1.0, 1000.0}
+
+	for i, row := range stringData {
+		if i == 0 {
+			continue
+		}
+		m := map[string]float64{}
+		year := row[0]
+		fmt.Printf("Year %v ========\n",year)
+		infl := readPercent(row[1])
+		stockPerformance := readPercent(row[2])
+		bondPerformance := readPercent(row[3])
+		m[VariableNames.CPI] = infl
+		m[VariableNames.CAPERatio] = parseFloat(row[4])
+		m[VariableNames.FEDFundsRate] = parseFloat(row[5])/100.0
+		m[VariableNames.TimeHorizon] = 20.0
+		m[VariableNames.Cashflow] = 1.0
+
+		stockRatio := f.Process(m)
+
+		updatePerformance(&inflation, infl)
+		updatePerformance(&allBonds, bondPerformance)
+		updatePerformance(&allStocks, stockPerformance)
+		updatePerformance(&allocator, stockRatio*stockPerformance+(1-stockRatio)*bondPerformance)
+
+
+		fmt.Printf("inflation: %.2f,  bond performance: %.2f,  stock performance: %.2f\n",infl, bondPerformance, stockPerformance)
+		fmt.Printf("stock allocation: %.2f,  bond allocation: %.2f\n\n", stockRatio, 1-stockRatio)
+		fmt.Printf("\t\t\t\tinflation\tall bond\tall stock\tallocator\n")
+		fmt.Printf("%v: \t\t\t%.2f, \t%.2f, \t%.2f, \t%.2f\n","value",inflation.Value, allBonds.Value, allStocks.Value, allocator.Value)
+		fmt.Printf("%v: \t%.2f, \t\t%.2f, \t\t%.2f, \t\t%.2f\n\n\n","max drawdown",inflation.Drawdown, allBonds.Drawdown, allStocks.Drawdown, allocator.Drawdown)
+
+	}
+	return nil
+}
+
+func updatePerformance(a *AssetValue, p float64) {
+	a.Value = a.Value * (1.0+(p/100.0))
+	if a.Value > a.Max {
+		a.Max = a.Value
+	}
+	if a.Value/a.Max < a.Drawdown {
+		a.Drawdown = a.Value/a.Max
+	}
+
+}
+
+func parseFloat(str string) float64 {
+	val, err := strconv.ParseFloat(str, 64)
+	if err != nil {
+		panic(err)
+	}
+	return val
+}
+
+func readPercent(str string) float64 {
+	str = strings.Replace(str, "%", "", 1)
+	val, err := strconv.ParseFloat(str, 64)
+	if err != nil {
+		panic(err)
+	}
+	return val
+
+}
 
 type VariableNameEnum struct {
 	CAPERatio      string
@@ -102,7 +184,7 @@ func (f *FuzzyAssetAllocator) AddCrispInput(name string, value float64) {
 		Name:  name,
 		Value: value,
 	}
-	fmt.Printf("%v initialized to: %v\n",name, value)
+	//fmt.Printf("%v initialized to: %v\n",name, value)
 }
 
 func (f *FuzzyAssetAllocator) AddFuzzyVariable(name string, value float64) {
@@ -110,7 +192,7 @@ func (f *FuzzyAssetAllocator) AddFuzzyVariable(name string, value float64) {
 		Name:  name,
 		Value: value,
 	}
-	fmt.Printf("%v initialized to: %v\n",name, value)
+	//fmt.Printf("%v initialized to: %v\n",name, value)
 
 }
 
@@ -118,12 +200,14 @@ func (f *FuzzyAssetAllocator) Initialize() {
 	f.CrispInputs = map[string]Input{}
 	f.FuzzyInputs = map[string]Input{}
 	f.Weights = []Weight{}
-	fmt.Println("Crisp Inputs")
+	//fmt.Println("Crisp Inputs")
+	/*
 	f.AddCrispInput(VariableNames.CAPERatio, 37.63)
 	f.AddCrispInput(VariableNames.FEDFundsRate, 0.25)
 	f.AddCrispInput(VariableNames.TimeHorizon, 20.0)
 	f.AddCrispInput(VariableNames.Cashflow, 1.0)
 	f.AddCrispInput(VariableNames.CPI, 4.8)
+	*/
 }
 
 func (f *FuzzyAssetAllocator) Process(m map[string]float64) float64 {
@@ -170,7 +254,7 @@ func (f *FuzzyAssetAllocator) SetCrispInputs(m map[string]float64) {
 
 // InitializeFuzzyInputs sets the membership functions for
 func (f *FuzzyAssetAllocator) InitializeFuzzyInputs() {
-	fmt.Println("\n\nFuzzy Inputs")
+	//fmt.Println("\n\nFuzzy Inputs")
 	f.AddFuzzyVariable(VariableNames.HighGrowth, Line(f.CrispInputs[VariableNames.CAPERatio], MeanCAPERatio, 10.0))
 	f.AddFuzzyVariable(VariableNames.LowGrowth, Line(f.CrispInputs[VariableNames.CAPERatio], MeanCAPERatio, 30.0))
 	f.AddFuzzyVariable(VariableNames.LowRate, Line(f.CrispInputs[VariableNames.FEDFundsRate], 2.0, -2.0))
@@ -181,7 +265,7 @@ func (f *FuzzyAssetAllocator) InitializeFuzzyInputs() {
 	f.AddFuzzyVariable(VariableNames.Drawdown, Triangle(f.CrispInputs[VariableNames.Cashflow], 0, -3.0, -10.0))
 	f.AddFuzzyVariable(VariableNames.Deflation, Line(f.CrispInputs[VariableNames.TimeHorizon], 0.0, -3.0))
 	f.AddFuzzyVariable(VariableNames.LowInflation, Triangle(f.CrispInputs[VariableNames.TimeHorizon], 0.0, 3.0, 7.0))
-	f.AddFuzzyVariable(VariableNames.HighInflation, Line(f.CrispInputs[VariableNames.TimeHorizon], 5.0, 15.0))
+	f.AddFuzzyVariable(VariableNames.HighInflation, Line(f.CrispInputs[VariableNames.CPI], 5.0, 15.0))
 }
 
 func (f *FuzzyAssetAllocator) WeightVariable(varName, asset string, weight float64) {
@@ -208,13 +292,13 @@ func (f *FuzzyAssetAllocator) ProcessRules() {
 	f.WeightVariable(VariableNames.LowGrowth, bonds, 10)
 
 	//Low Rate environment good for stocks
-	f.WeightVariable(VariableNames.LowRate, bonds, 20)
+	f.WeightVariable(VariableNames.LowRate, stocks, 30)
 
 	//High Rate environment not good for stocks
 	f.WeightVariable(VariableNames.HighRate, bonds, 20)
 
 	//bonds mitigate risk for the short term
-	f.WeightVariable(VariableNames.ShortTerm, bonds, 10)
+	f.WeightVariable(VariableNames.ShortTerm, bonds, 20)
 
 	//stocks perform better in the long term
 	f.WeightVariable(VariableNames.LongTerm, stocks, 10)

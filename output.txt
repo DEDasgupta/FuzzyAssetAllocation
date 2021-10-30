@@ -5,8 +5,8 @@ Year 1975 ========
 inflation: 6.94,  bond performance: 5.52,  stock performance: 36.95
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1069.40, 	1055.20, 	1369.50, 	1369.50
+		inflation	all bond	all stock	allocator
+value: 		1069.40, 	1055.20, 	1369.50, 	1369.50
 max drawdown: 	1.00, 		1.00, 		1.00, 		1.00
 
 
@@ -17,8 +17,8 @@ Year 1976 ========
 inflation: 4.86,  bond performance: 15.29,  stock performance: 24.18
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1121.37, 	1216.54, 	1700.65, 	1700.65
+		inflation	all bond	all stock	allocator
+value: 		1121.37, 	1216.54, 	1700.65, 	1700.65
 max drawdown: 	1.00, 		1.00, 		1.00, 		1.00
 
 
@@ -29,8 +29,8 @@ Year 1977 ========
 inflation: 6.70,  bond performance: 0.53,  stock performance: -7.84
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1196.50, 	1222.99, 	1567.31, 	1567.31
+		inflation	all bond	all stock	allocator
+value: 		1196.50, 	1222.99, 	1567.31, 	1567.31
 max drawdown: 	1.00, 		1.00, 		0.92, 		0.92
 
 
@@ -41,8 +41,8 @@ Year 1978 ========
 inflation: 9.02,  bond performance: -0.74,  stock performance: 5.87
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1304.43, 	1213.94, 	1659.32, 	1659.32
+		inflation	all bond	all stock	allocator
+value: 		1304.43, 	1213.94, 	1659.32, 	1659.32
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -53,8 +53,8 @@ Year 1979 ========
 inflation: 13.29,  bond performance: 1.83,  stock performance: 18.05
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1477.79, 	1236.15, 	1958.82, 	1958.82
+		inflation	all bond	all stock	allocator
+value: 		1477.79, 	1236.15, 	1958.82, 	1958.82
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -65,8 +65,8 @@ Year 1980 ========
 inflation: 12.52,  bond performance: -1.29,  stock performance: 31.92
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1662.81, 	1220.21, 	2584.08, 	2584.08
+		inflation	all bond	all stock	allocator
+value: 		1662.81, 	1220.21, 	2584.08, 	2584.08
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -77,8 +77,8 @@ Year 1981 ========
 inflation: 8.92,  bond performance: 5.28,  stock performance: -5.21
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1811.13, 	1284.63, 	2449.45, 	2449.45
+		inflation	all bond	all stock	allocator
+value: 		1811.13, 	1284.63, 	2449.45, 	2449.45
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -89,8 +89,8 @@ Year 1982 ========
 inflation: 3.83,  bond performance: 39.57,  stock performance: 20.97
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1880.50, 	1792.96, 	2963.10, 	2963.10
+		inflation	all bond	all stock	allocator
+value: 		1880.50, 	1792.96, 	2963.10, 	2963.10
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -101,8 +101,8 @@ Year 1983 ========
 inflation: 3.79,  bond performance: 2.30,  stock performance: 21.29
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			1951.77, 	1834.20, 	3593.94, 	3593.94
+		inflation	all bond	all stock	allocator
+value: 		1951.77, 	1834.20, 	3593.94, 	3593.94
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -113,8 +113,8 @@ Year 1984 ========
 inflation: 3.95,  bond performance: 14.87,  stock performance: 6.21
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2028.86, 	2106.95, 	3817.12, 	3817.12
+		inflation	all bond	all stock	allocator
+value: 		2028.86, 	2106.95, 	3817.12, 	3817.12
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -125,8 +125,8 @@ Year 1985 ========
 inflation: 3.80,  bond performance: 29.85,  stock performance: 31.23
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2105.96, 	2735.87, 	5009.21, 	5009.21
+		inflation	all bond	all stock	allocator
+value: 		2105.96, 	2735.87, 	5009.21, 	5009.21
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -137,8 +137,8 @@ Year 1986 ========
 inflation: 1.10,  bond performance: 21.35,  stock performance: 18.06
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2129.12, 	3319.98, 	5913.88, 	5913.88
+		inflation	all bond	all stock	allocator
+value: 		2129.12, 	3319.98, 	5913.88, 	5913.88
 max drawdown: 	1.00, 		0.99, 		0.92, 		0.92
 
 
@@ -149,8 +149,8 @@ Year 1987 ========
 inflation: 4.43,  bond performance: -2.64,  stock performance: 4.71
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2223.44, 	3232.33, 	6192.42, 	6192.42
+		inflation	all bond	all stock	allocator
+value: 		2223.44, 	3232.33, 	6192.42, 	6192.42
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -161,8 +161,8 @@ Year 1988 ========
 inflation: 4.42,  bond performance: 6.90,  stock performance: 16.22
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2321.72, 	3455.36, 	7196.83, 	7196.83
+		inflation	all bond	all stock	allocator
+value: 		2321.72, 	3455.36, 	7196.83, 	7196.83
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -173,8 +173,8 @@ Year 1989 ========
 inflation: 4.65,  bond performance: 17.84,  stock performance: 31.36
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2429.68, 	4071.80, 	9453.76, 	9453.76
+		inflation	all bond	all stock	allocator
+value: 		2429.68, 	4071.80, 	9453.76, 	9453.76
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -185,8 +185,8 @@ Year 1990 ========
 inflation: 6.11,  bond performance: 7.70,  stock performance: -3.32
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2578.13, 	4385.33, 	9139.89, 	9139.89
+		inflation	all bond	all stock	allocator
+value: 		2578.13, 	4385.33, 	9139.89, 	9139.89
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -197,8 +197,8 @@ Year 1991 ========
 inflation: 3.06,  bond performance: 18.91,  stock performance: 30.22
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2657.02, 	5214.59, 	11901.97, 	11901.97
+		inflation	all bond	all stock	allocator
+value: 		2657.02, 	5214.59, 	11901.97, 	11901.97
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -209,8 +209,8 @@ Year 1992 ========
 inflation: 2.90,  bond performance: 7.23,  stock performance: 7.42
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			2734.08, 	5591.61, 	12785.09, 	12785.09
+		inflation	all bond	all stock	allocator
+value: 		2734.08, 	5591.61, 	12785.09, 	12785.09
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -221,8 +221,8 @@ Year 1993 ========
 inflation: 2.75,  bond performance: 12.97,  stock performance: 9.89
 stock allocation: 0.99,  bond allocation: 0.01
 
-				inflation	all bond	all stock	allocator
-value: 			2809.27, 	6316.84, 	14049.54, 	14054.57
+		inflation	all bond	all stock	allocator
+value: 		2809.27, 	6316.84, 	14049.54, 	14054.57
 max drawdown: 	1.00, 		0.97, 		0.92, 		0.92
 
 
@@ -233,8 +233,8 @@ Year 1994 ========
 inflation: 2.67,  bond performance: -7.19,  stock performance: 1.18
 stock allocation: 0.95,  bond allocation: 0.05
 
-				inflation	all bond	all stock	allocator
-value: 			2884.27, 	5862.66, 	14215.32, 	14157.06
+		inflation	all bond	all stock	allocator
+value: 		2884.27, 	5862.66, 	14215.32, 	14157.06
 max drawdown: 	1.00, 		0.93, 		0.92, 		0.92
 
 
@@ -245,8 +245,8 @@ Year 1995 ========
 inflation: 2.54,  bond performance: 25.55,  stock performance: 37.45
 stock allocation: 0.99,  bond allocation: 0.01
 
-				inflation	all bond	all stock	allocator
-value: 			2957.53, 	7360.57, 	19538.96, 	19444.00
+		inflation	all bond	all stock	allocator
+value: 		2957.53, 	7360.57, 	19538.96, 	19444.00
 max drawdown: 	1.00, 		0.93, 		0.92, 		0.92
 
 
@@ -257,8 +257,8 @@ Year 1996 ========
 inflation: 3.32,  bond performance: 0.00,  stock performance: 22.88
 stock allocation: 0.84,  bond allocation: 0.16
 
-				inflation	all bond	all stock	allocator
-value: 			3055.72, 	7360.57, 	24009.48, 	23170.59
+		inflation	all bond	all stock	allocator
+value: 		3055.72, 	7360.57, 	24009.48, 	23170.59
 max drawdown: 	1.00, 		0.93, 		0.92, 		0.92
 
 
@@ -269,8 +269,8 @@ Year 1997 ========
 inflation: 1.70,  bond performance: 11.97,  stock performance: 33.19
 stock allocation: 0.75,  bond allocation: 0.25
 
-				inflation	all bond	all stock	allocator
-value: 			3107.67, 	8241.63, 	31978.22, 	29617.25
+		inflation	all bond	all stock	allocator
+value: 		3107.67, 	8241.63, 	31978.22, 	29617.25
 max drawdown: 	1.00, 		0.93, 		0.92, 		0.92
 
 
@@ -281,8 +281,8 @@ Year 1998 ========
 inflation: 1.61,  bond performance: 14.64,  stock performance: 28.62
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			3157.70, 	9448.20, 	41130.39, 	36896.70
+		inflation	all bond	all stock	allocator
+value: 		3157.70, 	9448.20, 	41130.39, 	36896.70
 max drawdown: 	1.00, 		0.93, 		0.92, 		0.92
 
 
@@ -293,8 +293,8 @@ Year 1999 ========
 inflation: 2.68,  bond performance: -7.83,  stock performance: 21.07
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			3242.33, 	8708.41, 	49796.56, 	41588.89
+		inflation	all bond	all stock	allocator
+value: 		3242.33, 	8708.41, 	49796.56, 	41588.89
 max drawdown: 	1.00, 		0.92, 		0.92, 		0.92
 
 
@@ -305,8 +305,8 @@ Year 2000 ========
 inflation: 3.39,  bond performance: 17.28,  stock performance: -9.06
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			3352.25, 	10213.22, 	45284.99, 	40984.49
+		inflation	all bond	all stock	allocator
+value: 		3352.25, 	10213.22, 	45284.99, 	40984.49
 max drawdown: 	1.00, 		0.92, 		0.91, 		0.92
 
 
@@ -317,8 +317,8 @@ Year 2001 ========
 inflation: 1.55,  bond performance: 5.40,  stock performance: -12.02
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			3404.21, 	10764.73, 	39841.73, 	38125.66
+		inflation	all bond	all stock	allocator
+value: 		3404.21, 	10764.73, 	39841.73, 	38125.66
 max drawdown: 	1.00, 		0.92, 		0.80, 		0.92
 
 
@@ -329,8 +329,8 @@ Year 2002 ========
 inflation: 2.38,  bond performance: 15.45,  stock performance: -22.15
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			3485.23, 	12427.88, 	31016.79, 	33811.04
+		inflation	all bond	all stock	allocator
+value: 		3485.23, 	12427.88, 	31016.79, 	33811.04
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -341,8 +341,8 @@ Year 2003 ========
 inflation: 1.88,  bond performance: 0.15,  stock performance: 28.50
 stock allocation: 0.90,  bond allocation: 0.10
 
-				inflation	all bond	all stock	allocator
-value: 			3550.75, 	12446.53, 	39856.58, 	42446.36
+		inflation	all bond	all stock	allocator
+value: 		3550.75, 	12446.53, 	39856.58, 	42446.36
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -353,8 +353,8 @@ Year 2004 ========
 inflation: 3.26,  bond performance: 4.50,  stock performance: 10.74
 stock allocation: 0.76,  bond allocation: 0.24
 
-				inflation	all bond	all stock	allocator
-value: 			3666.50, 	13006.62, 	44137.17, 	46382.27
+		inflation	all bond	all stock	allocator
+value: 		3666.50, 	13006.62, 	44137.17, 	46382.27
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -365,8 +365,8 @@ Year 2005 ========
 inflation: 3.42,  bond performance: 3.01,  stock performance: 4.77
 stock allocation: 0.79,  bond allocation: 0.21
 
-				inflation	all bond	all stock	allocator
-value: 			3791.90, 	13398.12, 	46242.52, 	48423.86
+		inflation	all bond	all stock	allocator
+value: 		3791.90, 	13398.12, 	46242.52, 	48423.86
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -377,8 +377,8 @@ Year 2006 ========
 inflation: 2.54,  bond performance: 2.19,  stock performance: 15.64
 stock allocation: 0.79,  bond allocation: 0.21
 
-				inflation	all bond	all stock	allocator
-value: 			3888.21, 	13691.54, 	53474.84, 	54648.01
+		inflation	all bond	all stock	allocator
+value: 		3888.21, 	13691.54, 	53474.84, 	54648.01
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -389,8 +389,8 @@ Year 2007 ========
 inflation: 4.08,  bond performance: 10.42,  stock performance: 5.39
 stock allocation: 0.77,  bond allocation: 0.23
 
-				inflation	all bond	all stock	allocator
-value: 			4046.85, 	15118.20, 	56357.14, 	58216.02
+		inflation	all bond	all stock	allocator
+value: 		4046.85, 	15118.20, 	56357.14, 	58216.02
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.81
 
 
@@ -401,8 +401,8 @@ Year 2008 ========
 inflation: 0.09,  bond performance: 20.53,  stock performance: -37.02
 stock allocation: 0.86,  bond allocation: 0.14
 
-				inflation	all bond	all stock	allocator
-value: 			4050.49, 	18221.96, 	35493.73, 	41366.51
+		inflation	all bond	all stock	allocator
+value: 		4050.49, 	18221.96, 	35493.73, 	41366.51
 max drawdown: 	1.00, 		0.92, 		0.62, 		0.71
 
 
@@ -413,8 +413,8 @@ Year 2009 ========
 inflation: 2.72,  bond performance: -10.17,  stock performance: 26.49
 stock allocation: 1.00,  bond allocation: 0.00
 
-				inflation	all bond	all stock	allocator
-value: 			4160.67, 	16368.79, 	44896.01, 	52324.49
+		inflation	all bond	all stock	allocator
+value: 		4160.67, 	16368.79, 	44896.01, 	52324.49
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -425,8 +425,8 @@ Year 2010 ========
 inflation: 1.50,  bond performance: 7.92,  stock performance: 14.91
 stock allocation: 0.98,  bond allocation: 0.02
 
-				inflation	all bond	all stock	allocator
-value: 			4223.08, 	17665.20, 	51590.01, 	60050.11
+		inflation	all bond	all stock	allocator
+value: 		4223.08, 	17665.20, 	51590.01, 	60050.11
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -437,8 +437,8 @@ Year 2011 ========
 inflation: 2.96,  bond performance: 16.24,  stock performance: 1.97
 stock allocation: 0.89,  bond allocation: 0.11
 
-				inflation	all bond	all stock	allocator
-value: 			4348.08, 	20534.02, 	52606.33, 	62146.19
+		inflation	all bond	all stock	allocator
+value: 		4348.08, 	20534.02, 	52606.33, 	62146.19
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -449,8 +449,8 @@ Year 2012 ========
 inflation: 1.74,  bond performance: 2.73,  stock performance: 15.82
 stock allocation: 0.95,  bond allocation: 0.05
 
-				inflation	all bond	all stock	allocator
-value: 			4423.74, 	21094.60, 	60928.65, 	71602.06
+		inflation	all bond	all stock	allocator
+value: 		4423.74, 	21094.60, 	60928.65, 	71602.06
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -461,8 +461,8 @@ Year 2013 ========
 inflation: 1.50,  bond performance: -8.57,  stock performance: 32.18
 stock allocation: 0.93,  bond allocation: 0.07
 
-				inflation	all bond	all stock	allocator
-value: 			4490.09, 	19286.79, 	80535.50, 	92581.91
+		inflation	all bond	all stock	allocator
+value: 		4490.09, 	19286.79, 	80535.50, 	92581.91
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -473,8 +473,8 @@ Year 2014 ========
 inflation: 0.76,  bond performance: 10.63,  stock performance: 13.51
 stock allocation: 0.84,  bond allocation: 0.16
 
-				inflation	all bond	all stock	allocator
-value: 			4524.22, 	21336.98, 	91415.84, 	104655.63
+		inflation	all bond	all stock	allocator
+value: 		4524.22, 	21336.98, 	91415.84, 	104655.63
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -485,8 +485,8 @@ Year 2015 ========
 inflation: 0.73,  bond performance: 1.12,  stock performance: 1.25
 stock allocation: 0.79,  bond allocation: 0.21
 
-				inflation	all bond	all stock	allocator
-value: 			4557.24, 	21575.95, 	92558.54, 	105935.78
+		inflation	all bond	all stock	allocator
+value: 		4557.24, 	21575.95, 	92558.54, 	105935.78
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -497,8 +497,8 @@ Year 2016 ========
 inflation: 2.07,  bond performance: 1.00,  stock performance: 11.82
 stock allocation: 0.86,  bond allocation: 0.14
 
-				inflation	all bond	all stock	allocator
-value: 			4651.58, 	21791.71, 	103498.96, 	116804.80
+		inflation	all bond	all stock	allocator
+value: 		4651.58, 	21791.71, 	103498.96, 	116804.80
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -509,8 +509,8 @@ Year 2017 ========
 inflation: 2.11,  bond performance: 2.39,  stock performance: 21.67
 stock allocation: 0.76,  bond allocation: 0.24
 
-				inflation	all bond	all stock	allocator
-value: 			4749.73, 	22312.54, 	125927.18, 	136621.06
+		inflation	all bond	all stock	allocator
+value: 		4749.73, 	22312.54, 	125927.18, 	136621.06
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -521,8 +521,8 @@ Year 2018 ========
 inflation: 1.91,  bond performance: 0.99,  stock performance: -4.53
 stock allocation: 0.71,  bond allocation: 0.29
 
-				inflation	all bond	all stock	allocator
-value: 			4840.45, 	22533.43, 	120222.68, 	132591.47
+		inflation	all bond	all stock	allocator
+value: 		4840.45, 	22533.43, 	120222.68, 	132591.47
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 
@@ -533,8 +533,8 @@ Year 2019 ========
 inflation: 2.29,  bond performance: 8.03,  stock performance: 31.33
 stock allocation: 0.75,  bond allocation: 0.25
 
-				inflation	all bond	all stock	allocator
-value: 			4951.29, 	24342.86, 	157888.45, 	166344.50
+		inflation	all bond	all stock	allocator
+value: 		4951.29, 	24342.86, 	157888.45, 	166344.50
 max drawdown: 	1.00, 		0.90, 		0.62, 		0.71
 
 

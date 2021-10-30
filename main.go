@@ -69,8 +69,8 @@ func runSimulation() error {
 
 		fmt.Printf("inflation: %.2f,  bond performance: %.2f,  stock performance: %.2f\n",infl, bondPerformance, stockPerformance)
 		fmt.Printf("stock allocation: %.2f,  bond allocation: %.2f\n\n", stockRatio, 1-stockRatio)
-		fmt.Printf("\t\t\t\tinflation\tall bond\tall stock\tallocator\n")
-		fmt.Printf("%v: \t\t\t%.2f, \t%.2f, \t%.2f, \t%.2f\n","value",inflation.Value, allBonds.Value, allStocks.Value, allocator.Value)
+		fmt.Printf("\t\tinflation\tall bond\tall stock\tallocator\n")
+		fmt.Printf("%v: \t\t%.2f, \t%.2f, \t%.2f, \t%.2f\n","value",inflation.Value, allBonds.Value, allStocks.Value, allocator.Value)
 		fmt.Printf("%v: \t%.2f, \t\t%.2f, \t\t%.2f, \t\t%.2f\n\n\n","max drawdown",inflation.Drawdown, allBonds.Drawdown, allStocks.Drawdown, allocator.Drawdown)
 
 	}
